@@ -2,5 +2,5 @@ ansible/hosts
 .terraform/*
 .terraform.lock.hcl
 terraform.tfvars
-../Packer/*
+Packer/packer_cache/*
 Packer/variables.json
