@@ -1,0 +1,6 @@
+ansible/hosts
+.terraform/*
+.terraform.lock.hcl
+terraform.tfvars
+../Packer/*
+Packer/variables.json

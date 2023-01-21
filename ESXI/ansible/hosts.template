@@ -1,0 +1,60 @@
+[all:vars]
+; domain_name : folder inside ad/
+domain_name=sevenkingdoms.local
+ansible_user=vagrant
+ansible_password=vagrant
+password=Str0nGPassw0rd123_
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
+ansible_winrm_operation_timeout_sec=400
+ansible_winrm_read_timeout_sec=500
+enable_http_proxy=no
+ad_http_proxy=http://x.x.x.x:xxxx
+ad_https_proxy=http://x.x.x.x:xxxx
+
+; ------------------------------------------------
+; sevenkingdoms.local
+[dc01:vars]
+dns_domain=IP.FROM.DC01
+dict_key=dc01
+[dc01]
+IP.FROM.DC01
+
+; ------------------------------------------------
+; north.sevenkingdoms.local
+[dc02:vars]
+dns_domain=IP.FROM.DC01
+dict_key=dc02
+[dc02]
+IP.FROM.DC02
+
+[srv02:vars]
+dns_domain=IP.FROM.DC02
+dict_key=srv02
+[srv02]
+IP.FROM.SRV02
+
+; ------------------------------------------------
+; essos.local
+[dc03:vars]
+dns_domain=IP.FROM.DC03
+dict_key=dc03
+[dc03]
+IP.FROM.DC03
+
+[srv03:vars]
+dns_domain=IP.FROM.DC03
+dict_key=srv03
+[srv03]
+IP.FROM.SRV03
+
+; [elk:vars]
+; ansible_connection=ssh
+; ansible_ssh_user=vagrant
+; ansible_ssh_private_key_file=./.vagrant/machines/elk/virtualbox/private_key
+; ansible_ssh_port=22
+; host_key_checking = false
+; 
+; [elk]
+; 192.168.56.50
+
