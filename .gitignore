@@ -9,3 +9,9 @@ ansible/test.yml
 *VBoxHeadless*.log
 ESXI/Packer/variables.json
 ESXI/main.tf
+ESXI/ansible/hosts
+ESXI/.terraform/*
+ESXI/.terraform.lock.hcl
+ESXI/terraform.tfvars
+ESXI/Packer/packer_cache/*
+ESXI/Packer/variables.json
