@@ -13,5 +13,6 @@ ESXI/ansible/hosts
 ESXI/.terraform/*
 ESXI/.terraform.lock.hcl
 ESXI/terraform.tfvars
+ESXI/terraform.tfstate
 ESXI/Packer/packer_cache/*
 ESXI/Packer/variables.json
