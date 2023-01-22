@@ -14,8 +14,7 @@
           "./scripts/sysprep.bat",
           "./scripts/disable-screensaver.ps1",
           "./scripts/disable-winrm.ps1",
-          "./scripts/enable-winrm.ps1",
-          "./scripts/microsoft-updates.bat"
+          "./scripts/enable-winrm.ps1"
         ],
         "guest_os_type": "windows8srv-64",
         "headless": false,
