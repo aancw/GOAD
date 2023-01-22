@@ -4,3 +4,4 @@ ansible/hosts
 terraform.tfvars
 Packer/packer_cache/*
 Packer/variables.json
+main.tf
