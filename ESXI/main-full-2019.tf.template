@@ -31,6 +31,9 @@ resource "esxi_guest" "DC01" {
   network_interfaces {
     virtual_network = var.vm_network
   }
+  network_interfaces {
+    virtual_network = var.hostonly_network
+  }
   guest_startup_timeout  = 45
   guest_shutdown_timeout = 30
 }
@@ -50,6 +53,9 @@ resource "esxi_guest" "DC02" {
   # This is the network that bridges your host machine with the ESXi VM
   network_interfaces {
     virtual_network = var.vm_network
+  }
+  network_interfaces {
+    virtual_network = var.hostonly_network
   }
   guest_startup_timeout  = 45
   guest_shutdown_timeout = 30
@@ -71,6 +77,9 @@ resource "esxi_guest" "DC03" {
   network_interfaces {
     virtual_network = var.vm_network
   }
+  network_interfaces {
+    virtual_network = var.hostonly_network
+  }
   guest_startup_timeout  = 45
   guest_shutdown_timeout = 30
 }
@@ -91,6 +100,9 @@ resource "esxi_guest" "SRV02" {
   network_interfaces {
     virtual_network = var.vm_network
   }
+  network_interfaces {
+    virtual_network = var.hostonly_network
+  }
   guest_startup_timeout  = 45
   guest_shutdown_timeout = 30
 }
@@ -109,6 +121,9 @@ resource "esxi_guest" "SRV03" {
   # This is the network that bridges your host machine with the ESXi VM
   network_interfaces {
     virtual_network = var.vm_network
+  }
+  network_interfaces {
+    virtual_network = var.hostonly_network
   }
   guest_startup_timeout  = 45
   guest_shutdown_timeout = 30

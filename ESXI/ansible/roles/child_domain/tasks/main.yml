@@ -54,8 +54,8 @@
 #    ansible_become_pass: "{{password}}"
 #  when: not domain_child_log.stat.exists
 
-- name: "disable interface {{nat_adapter}} before join domain"
-  win_shell: netsh interface set interface "{{nat_adapter}}" disable
+#- name: "disable interface {{nat_adapter}} before join domain"
+  #win_shell: netsh interface set interface "{{nat_adapter}}" disable
 
 - name: add child domain to parent domain
   ansible.windows.win_powershell:

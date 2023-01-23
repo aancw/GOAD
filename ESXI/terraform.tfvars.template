@@ -1,0 +1,5 @@
+esxi_hostname = "REPLACE_ME"
+esxi_password = "REPLACE_ME"
+esxi_datastore = "REPLACE_ME"
+vm_network = "VM Network"
+hostonly_network = "HostOnly Network"

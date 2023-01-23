@@ -1,5 +1,5 @@
-- name: "disable interface {{nat_adapter}} before join domain"
-  win_shell: netsh interface set interface "{{nat_adapter}}" disable
+#- name: "disable interface {{nat_adapter}} before join domain"
+  #win_shell: netsh interface set interface "{{nat_adapter}}" disable
 
 - name: Ensure that domain exists
   win_domain:
