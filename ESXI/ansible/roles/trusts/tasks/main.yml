@@ -28,7 +28,7 @@
         $distantForest = [System.DirectoryServices.ActiveDirectory.Forest]::getForest($remoteContext)
         $localForest.CreateTrustRelationship($distantForest,"Bidirectional")
       }
-    error_action: stop
+    error_action: continue
     parameters:
       RemoteForest: "{{remote_forest}}"
       RemoteAdmin: "{{remote_admin}}"
